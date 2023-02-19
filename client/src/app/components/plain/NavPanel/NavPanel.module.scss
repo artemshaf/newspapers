@@ -1,0 +1,40 @@
+@import "../../../styles/mixins.scss";
+
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  color: $white;
+  background-color: $grey900;
+  display: flex;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.item {
+  padding: 5px 15px;
+
+  & a.active {
+    text-decoration: underline;
+    background-color: red;
+    color: red;
+  }
+  border-right: 1px solid $grey400;
+}
+
+.link {
+  &.active {
+    color: red;
+  }
+}
+
+.input {
+  border-left: 2px solid $grey400;
+  padding-left: 15px;
+}

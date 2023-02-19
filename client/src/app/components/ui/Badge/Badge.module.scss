@@ -1,0 +1,41 @@
+@import "../../../styles/variables.scss";
+
+.badge {
+  color: $white;
+  outline: none;
+  border: none;
+  transition: $transition-m;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+.s {
+  padding: 9px 6px;
+}
+.m {
+  padding: 12px 8px;
+}
+.l {
+  padding: 15px 10px;
+}
+
+.hot {
+  background-color: #fe4a51;
+}
+.common {
+  background-color: #49cfe8;
+}
+.rare {
+  background-color: #4c60f5;
+}
+.primary {
+  background-color: #0088ff;
+}
+.secondary {
+  background-color: #49cfe8;
+}
+.fresh {
+  background-color: #2ecc71;
+}

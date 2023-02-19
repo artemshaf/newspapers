@@ -1,0 +1,21 @@
+@import "../../../styles/mixins.scss";
+
+.footer {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & * {
+  }
+
+  @include mqS() {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  @include mqXs() {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}

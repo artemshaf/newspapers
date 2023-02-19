@@ -1,0 +1,21 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.s {
+  height: 24px;
+  width: 24px;
+}
+
+.m {
+  height: 32px;
+  width: 32px;
+}
+
+.l {
+  width: 40px;
+  height: 40px;
+}

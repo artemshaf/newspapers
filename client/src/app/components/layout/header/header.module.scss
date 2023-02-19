@@ -1,0 +1,97 @@
+@import "../../../styles/mixins.scss";
+
+.header {
+  &_top {
+    background-color: $grey200;
+    color: $grey800;
+  }
+
+  &_bottom {
+    margin: 20px 0;
+    background-color: $white;
+  }
+}
+
+.container {
+  &_top {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 30px;
+    row-gap: 10px;
+
+    @include mqM {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.time {
+  &__block {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    gap: 15px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.socials {
+  margin-left: auto;
+  align-self: center;
+}
+
+.promo {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__arrow {
+    transform: rotate(180deg);
+  }
+}
+
+.badge {
+  background: red;
+  margin: 0;
+  min-height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.banner {
+  margin-left: auto;
+  max-height: 140px;
+  min-width: 50%;
+
+  object-fit: cover;
+  @include mqM {
+    min-width: 100%;
+  }
+}
+
+.logo {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
